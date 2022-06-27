@@ -1,0 +1,24 @@
+<aura:component >
+    <aura:attribute name ="first" type="Boolean"/>
+    <aura:attribute name ="second" type="Boolean"/>
+    <aura:attribute name ="third" type="Boolean"/>
+    
+    <lightning:button variant="brand" label="first Lecture" title="Brand action" onclick="{! c.handleClick }" />
+    <lightning:button variant="brand" label="second Lecture" title="Brand action" onclick="{! c.handleClick }" />
+    <lightning:button variant="brand" label="third Lecture" title="Brand action" onclick="{! c.handleClick }" />
+    <br/><br/>
+    <aura:if isTrue="{!v.first}">
+    <c:sep25_1/>
+  </aura:if> 
+    
+     <aura:if isTrue="{!v.second}">
+   <c:October14th/>
+  </aura:if> 
+    
+     <aura:if isTrue="{!v.third}">
+    <c:Oct24/>
+  </aura:if> 
+    
+  
+  
+</aura:component>

@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" 
+                controller = "ocober16class">
+    
+    <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+        
+        <div class="slds-size_1-of-2 slds-p-right_xx-small">
+            <lightning:input aura:id="fname"  name="input1" label="Enter Your firstname" placeholder="type here..."/>
+        </div>
+        <div class="slds-size_1-of-2">
+            <lightning:input aura:id="lname"  name="input2" label="Enter Your lastname" placeholder="type here..."/>
+        </div>
+        <div class="slds-size_1-of-2 slds-p-right_xx-small">
+            <lightning:input aura:id="email" type="email" name="email3" placeholder="youraddress@company.com" label="Enter your email Address" />
+        </div>
+        <div class="slds-size_1-of-2">
+            <lightning:input aura:id="phone" type="tel" label="Enter your phone" name="phone2" placeholder="areacode-phone"/>
+        </div>
+        <div class="slds-align_absolute-center " style="height:5rem">
+            <lightning:button variant="destructive" label="Submit" title="Destructive action" onclick="{! c.handleClick }"/>
+        </div>
+    </div>
+</aura:component>

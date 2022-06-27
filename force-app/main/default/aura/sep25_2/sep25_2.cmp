@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:handler name="cmpEvent" event="c:sepEvents" action="{!c.handleComponentEvent}"/>
+    <aura:attribute name = "selectedOption" type="String"/>
+    <lightning:card title="This is Container Component">
+        Button Clicked : {!v.selectedOption}<br/>
+        
+        <c:sep25_1/>
+    </lightning:card>
+</aura:component>

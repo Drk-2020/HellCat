@@ -1,0 +1,8 @@
+<aura:component >
+    <lightning:card title="This is Parent">
+   
+	  <lightning:button variant="brand" label="Call Childs JS" title="Brand action" onclick="{! c.handleClick }" />
+         
+    </lightning:card>
+    <c:Oct27_2 aura:id="childAuraId"/>
+</aura:component>

@@ -1,0 +1,23 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" 
+                controller="Oct24Controller">
+    
+    <lightning:button variant="brand" label="Submit" title="Brand action" onclick="{! c.handleClick }" />
+    <aura:attribute name="oppList" type="List" />
+    
+    
+    <aura:iteration items="{!v.oppList}" var="item">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <span> {!item.AccountName}</span>
+            </div>
+            <div class="slds-col">
+                <span> {!item.Stage}</span>
+            </div>
+            <div class="slds-col">
+                <span> {!item.Amount}</span>
+            </div>
+        </div>
+       <br/>
+    </aura:iteration>
+    
+</aura:component>

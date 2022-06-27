@@ -1,0 +1,9 @@
+<aura:component >
+   <aura:registerEvent name="cmpEvent" type="c:sepEvents"/>
+
+	 <lightning:button variant="brand" label="stone" title="Brand action" onclick="{! c.handleClick }" />
+     <lightning:button variant="brand" label="papar" title="Brand action" onclick="{! c.handleClick }" />
+     <lightning:button variant="brand" label="scissor" title="Brand action" onclick="{! c.handleClick }" />
+    <br/>
+   
+</aura:component>

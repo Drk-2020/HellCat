@@ -1,0 +1,26 @@
+<apex:page standardController="Account" extensions="accsearchcontroller">
+  <apex:form >
+      <apex:inputtext value="{!searchstring}"/>
+      <apex:commandButton value="Search" action="{!search}"/>
+      <apex:commandButton value="Clear" action="{!clear}"/>
+      
+      <apex:pageBlock title="Search Result of Accounts">
+         <apex:pageBlockTable value="{!accList}" var="a">
+         <apex:column value="{!a.name}"/>
+         </apex:pageBlockTable>
+      </apex:pageBlock>
+      
+      <apex:pageBlock title="Search Result of Consultant">
+         <apex:pageBlockTable value="{!conList}" var="a">
+         <apex:column value="{!a.name}"/>
+         </apex:pageBlockTable>
+      </apex:pageBlock>
+      
+      <apex:pageBlock title="Search Result of Bank">
+         <apex:pageBlockTable value="{!bList}" var="a">
+         <apex:column value="{!a.name}"/>
+         </apex:pageBlockTable>
+      </apex:pageBlock>
+      
+  </apex:form>
+</apex:page>

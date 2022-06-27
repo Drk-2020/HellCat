@@ -1,0 +1,19 @@
+<apex:page controller="ajaxController" tabStyle="Account">
+  <apex:form >
+    <apex:actionFunction name="showDescriptionSection" action="{!showdescriptionMethod}" rerender="descriptionID"/>
+    <apex:pageBlock title="Account Details"> 
+      <apex:pageBlockSection title="Account Info" >
+          <apex:inputField value="{!acc.name}"/>
+            <apex:inputField value="{!acc.rating}" onchange="showDescriptionSection()"/>
+      </apex:pageBlockSection>
+      
+      <apex:outputPanel id="descriptionID">
+      <apex:pageBlockSection title="Description Info" rendered="{!showDescription}">
+          <apex:inputfield value="{!acc.description}"/>
+      </apex:pageBlockSection>
+      </apex:outputPanel>
+      
+    </apex:pageBlock>
+    </apex:form>
+  
+</apex:page>
